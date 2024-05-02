@@ -11,7 +11,6 @@ a {
 .titulos-juegos {
     text-align: center;
 }
-/* Estilos para el encabezado */
 header {
 	background-color: #000000;
 	padding: 20px;
@@ -29,13 +28,11 @@ nav ul {
   padding: 0;
 }
 
-  /* Estilos para el título */
   h1 {
     margin: 0;
     font-size: 36px;
   }
   
-  /* Estilos para los juegos destacados */
   .juegos-destacados {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +69,6 @@ nav ul {
   }
   
   
-  /* Estilos para el botón de compra */
   button {
     background-color: #292929;
     color: white;
@@ -88,7 +84,6 @@ nav ul {
     background-color: #444444;
   }
   
-  /* Estilos para el pie de página */
   footer {
     background-color: #292929;
     color: white;
@@ -99,7 +94,6 @@ nav ul {
   footer p {
     margin: 0;
   }
-/* Estilos para el título principal */
 
 .titulo-principal {
     font-family: "Arial Black", sans-serif;
@@ -112,7 +106,6 @@ nav ul {
     background-image: url(".fondo.jpg");
     background-size: cover;
   }
-/* Estilos para el cuerpo de la página */
 
 body {
     background-image: url("../img/fondop.jpg");
@@ -131,3 +124,49 @@ body {
     padding: 20px;
     text-align: center;
   }
+  @media only screen and (max-width: 600px) {
+    .imagen {
+      width: 75%;
+      height: 75%;
+      margin: 2%;
+    }
+  
+    .titulo-principal {
+      font-size: 3vw;
+      padding: 3% 0;
+    }
+  
+    .juegos-destacados {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .juegos-destacados a {
+      margin: 3%;
+      text-decoration: none;
+    }
+    
+    .juegos-destacados img {
+      width: 75%;
+      height: auto;
+      border: 1px solid #292929;
+      box-shadow: 0px 0px 5px #292929;
+      transition: transform 0.2s;
+    }
+    
+    .juegos-destacados img:hover {
+      transform: scale(1.1);
+    }
+  
+    button {
+      padding: 2% 4%;
+      font-size: 2vw;
+    }
+  
+    footer {
+      padding: 3%;
+    }
+  }
+  
