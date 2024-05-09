@@ -3,9 +3,14 @@
 	height: 200px;
   margin: 5px;
 }
+main {
+  display: flex;
+}
 a {
 	color: #fff;
 	text-decoration: none;
+  font-size: 140%;
+  font-weight: 140%;
 }
 
 .titulos-juegos {
@@ -15,10 +20,11 @@ header {
 	background-color: #000000;
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  
 }
 nav {
   display: flex;
-  justify-content: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -26,6 +32,13 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
 }
 
   h1 {
@@ -38,6 +51,8 @@ nav ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
   }
   
   .juegos-destacados a {
@@ -103,7 +118,6 @@ nav ul {
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    background-image: url(".fondo.jpg");
     background-size: cover;
   }
 
@@ -112,6 +126,7 @@ body {
     background-size: 50% ;
     background-position: center;
     margin: 0;
+    position: block;
   }
   footer {
     position:static;
@@ -125,10 +140,23 @@ body {
     text-align: center;
   }
   @media only screen and (max-width: 600px) {
+    
+    body {
+      background-image: url("../img/fondop.jpg");
+      background-size: 50% ;
+      background-position: center;
+      margin: 0;
+      position: block;
+       }
+
+    header {
+  	background-color: #000000;
+  	padding: 20px;
+	  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  
+    }
     .imagen {
-      width: 75%;
-      height: 75%;
-      margin: 2%;
+      display: flex;
     }
   
     .titulo-principal {
@@ -141,6 +169,8 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      margin-right: 15%;
+      margin-left: 15%;
     }
     
     .juegos-destacados a {
